@@ -1,0 +1,140 @@
+:root {
+    /* Colors */
+    --White: #ffffff;
+    --Black: #000000;
+    --Text-input-field: #F7F7F7;
+    --Hospital-green: #ACD9B2;
+    --Very-light-pink: #C7C7C7;
+    --Dark: #232830;
+    /* Font sizes */
+    --vsm: 12px;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    color: var(--Hospital-green);
+    text-decoration: none;
+}
+
+.login,
+.email {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 48px;
+    justify-self: center;
+    /* display: none; */
+}
+
+.title {
+    font-size: var(--lg);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--Very-light-pink);
+    font-size: var(--md);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.recovery {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.input {
+    background-color: var(--Text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+}
+
+.primary-button {
+    background-color: var(--Hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--White);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+.login-button {
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+
+.signin-button {
+    margin-top: 100px;
+    border: solid 1px var(--Hospital-green);
+    background-color: var(--Text-input-field);
+    color: var(--Hospital-green);
+}
+
+.img-email {
+    display: flex;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--Text-input-field);
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-email img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0px;
+}
+
+.menssage-email {
+    color: var(--Dark);
+    font-size: var(--vsm);
+    text-align: center;
+}
+
+.password-recovery {
+    text-align: center;
+    font-size: var(--vsm);
+}
